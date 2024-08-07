@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-26 02:34:50 AM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yMjswMjo1ODoxMCBQTTszNzE0"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yNDsxMDowNzo1MCBQTTszO0FkbWluaXN0cmF0b3I7V0lOLUZKR0JHUkZEOE5NOzIwMjEtMDItMjI7MDc6NDM6NTggUE07dW5pdCBrb252ZXJzaSBkYXJpIGNlbGNpdXMuZnByZzsxMDcyOA=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yNTswMToxNjo0MSBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLUZKR0JHUkZEOE5NOzIwMjEtMDItMjU7MTI6MDQ6MDQgUE07QmF0dSBndW50aW5nIGtlcnRhcy5mcHJnOzEwMDAz"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yNTswMzoxOToxOCBQTTsxO0FkbWluaXN0cmF0b3I7V0lOLUZKR0JHUkZEOE5NOzIwMjEtMDItMjU7MDI6NTM6MjcgUE07NzYxMA=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yNTswNToxMjozMyBQTTsxO0ZBUklLSE1MO0RFU0tUT1AtNUozTjM0UTsyMDIwLTEyLTI5OzEwOjMwOjIwIFBNO21hdGRpcyByZWt1cnNpZiBzZWt1ZW5zLmZwcmc7OTY0Ng=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tRkpHQkdSRkQ4Tk07MjAyMS0wMi0yNjswMjozNDo1MCBBTTs0MjszODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="menuchoice" type="Integer" array="False" size=""/>
+            <assign variable="menuchoice" expression="0"/>
+            <while expression="menuchoice !=6">
+                <output expression="&quot;menu utama&quot;" newline="True"/>
+                <output expression="&quot;1.faktorial&quot;" newline="True"/>
+                <output expression="&quot;2.konversi suhu&quot;" newline="True"/>
+                <output expression="&quot;3.GCD metode euclid&quot;" newline="True"/>
+                <output expression="&quot;4.gunting batu kertas&quot;" newline="True"/>
+                <output expression="&quot;5.tebak angka&quot;" newline="True"/>
+                <output expression="&quot;6.Deret Bilangan Pangkat&quot;" newline="True"/>
+                <output expression="&quot;pleae  choose an option&quot;" newline="True"/>
+                <input variable="menuchoice"/>
+                <if expression="menuchoice ==1">
+                    <then>
+                        <output expression="&quot;1.faktorial&quot;" newline="True"/>
+                        <declare name="a" type="Integer" array="False" size=""/>
+                        <input variable="a"/>
+                        <output expression="&quot;hasil &quot;&amp;a&amp;&quot;! = &quot; &amp;faktorial (a)" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="menuchoice ==2">
+                            <then>
+                                <declare name="menukonversi" type="Real" array="False" size=""/>
+                                <output expression="&quot;2.konversi suhu&quot;" newline="True"/>
+                                <output expression="&quot;konversi suhu yang menampilkan hasil dalam suhu celcius,fahrenheit,kelvin dan reaumur.&quot;" newline="True"/>
+                                <output expression="&quot;1.celcius&quot;" newline="True"/>
+                                <output expression="&quot;2.fahrenheit&quot;" newline="True"/>
+                                <output expression="&quot;3.kelvin&quot;" newline="True"/>
+                                <output expression="&quot;4.reaumur&quot;" newline="True"/>
+                                <input variable="menukonversi"/>
+                                <if expression="menukonversi==1">
+                                    <then>
+                                        <call expression="konversicelcius"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menukonversi==2">
+                                            <then>
+                                                <call expression="konversifahrenheit"/>
+                                            </then>
+                                            <else>
+                                                <if expression="menukonversi==3">
+                                                    <then>
+                                                        <call expression="konversikelvin"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="menukonversi==4">
+                                                            <then>
+                                                                <call expression="konversireaumur"/>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="menuchoice ==3">
+                                    <then>
+                                        <declare name="menugcdlcm" type="Integer" array="False" size=""/>
+                                        <output expression="&quot;4.GCD metode euclid&quot;" newline="True"/>
+                                        <call expression="gcdeuclid"/>
+                                    </then>
+                                    <else>
+                                        <if expression="menuchoice ==4">
+                                            <then>
+                                                <output expression="&quot;4.gunting batu kertas&quot;" newline="True"/>
+                                                <call expression="guntingbatukertas"/>
+                                            </then>
+                                            <else>
+                                                <if expression="menuchoice==5">
+                                                    <then>
+                                                        <call expression="tebakangka"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="menuchoice==6">
+                                                            <then>
+                                                                <call expression="deretbilanganberpangkat"/>
+                                                            </then>
+                                                            <else>
+                                                                <output expression="&quot;invalid choice&quot;" newline="True"/>
+                                                            </else>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+    <function name="deretbilanganberpangkat" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, z, hasil" type="Integer" array="False" size=""/>
+            <output expression="&quot;deret bilangan pangkat&quot;" newline="True"/>
+            <output expression="&quot;masukkan bilangan&quot;" newline="True"/>
+            <output expression="&quot;misal 1,2,3..dst.&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;masukkan pangkat&quot;" newline="True"/>
+            <input variable="z"/>
+            <for variable="i" start="1" end="z" direction="inc" step="1">
+                <assign variable="hasil" expression="n^i"/>
+                <output expression="n &amp; &quot; x &quot; &amp; i &amp; &quot; = &quot; &amp; hasil" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="faktorial" type="Integer" variable="hasil">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hasil" type="Integer" array="False" size=""/>
+            <if expression="n=0 or n=1">
+                <then>
+                    <assign variable="hasil" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="hasil" expression="n * faktorial (n-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="gcdeuclid" type="None" variable="a">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan 2 angka. Algoritma ini menghitung Penyebut Umum Maksimum (M.C.D.) &quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <while expression="not (B = 0)">
+                <if expression="A &gt; B">
+                    <then>
+                        <assign variable="A" expression="A - B"/>
+                    </then>
+                    <else>
+                        <assign variable="B" expression="B - A"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="A" newline="True"/>
+        </body>
+    </function>
+    <function name="guntingbatukertas" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="computerinput" type="String" array="True" size="3"/>
+            <declare name="userscore" type="Integer" array="False" size=""/>
+            <declare name="computerscore" type="Integer" array="False" size=""/>
+            <declare name="userinput" type="String" array="False" size=""/>
+            <declare name="QUIT" type="String" array="False" size=""/>
+            <assign variable="computerinput[0]" expression="&quot;Batu&quot;"/>
+            <assign variable="computerinput[1]" expression="&quot;Kertas&quot;"/>
+            <assign variable="computerinput[2]" expression="&quot;Gunting&quot;"/>
+            <assign variable="userscore" expression="0"/>
+            <assign variable="computerscore" expression="0"/>
+            <assign variable="QUIT" expression="&quot;quit&quot;"/>
+            <output expression="&quot;Ketik Batu,Gunting,Kertas, atau quit untuk berhenti bermain.&quot;" newline="True"/>
+            <input variable="userinput"/>
+            <while expression="userinput &lt;&gt; &quot;quit&quot; or userinput &lt;&gt;&quot;quit&quot;">
+                <declare name="computerguess" type="String" array="False" size=""/>
+                <assign variable="computerguess" expression="computerinput[random(3)]"/>
+                <if expression="(userinput==&quot;Batu&quot; and computerguess == &quot;Batu&quot;) OR (userinput==&quot;batu&quot; and computerguess == &quot;Batu&quot;) OR (userinput==&quot;Kertas&quot; and computerguess==&quot;Kertas&quot;) OR (userinput==&quot;kertas&quot; and computerguess==&quot;Kertas&quot;) OR (userinput==&quot;Gunting&quot; and computerguess==&quot;Gunting&quot;) OR (userinput==&quot;gunting&quot; and computerguess==&quot;Gunting&quot;)">
+                    <then>
+                        <output expression="&quot;sama&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="(userinput==&quot;Batu&quot; and computerguess == &quot;Kertas&quot;) OR (userinput==&quot;batu&quot; and computerguess == &quot;kertas&quot;)">
+                            <then>
+                                <output expression="&quot;computer wins&quot;" newline="True"/>
+                                <assign variable="computerscore" expression="computerscore+1"/>
+                            </then>
+                            <else>
+                                <if expression="(userinput==&quot;Kertas&quot; and computerguess==&quot;Gunting&quot;) OR (userinput==&quot;kertas&quot; and computerguess==&quot;gunting&quot;)">
+                                    <then>
+                                        <output expression="&quot;computer wins&quot;" newline="True"/>
+                                        <assign variable="computerscore" expression="computerscore+1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="(userinput==&quot;Gunting&quot; and computerguess==&quot;Batu&quot;) OR (userinput==&quot;gunting&quot; and computerguess==&quot;batu&quot;)">
+                                            <then>
+                                                <output expression="&quot;computer wins&quot;" newline="True"/>
+                                                <assign variable="computerscore" expression="computerscore+1"/>
+                                            </then>
+                                            <else>
+                                                <output expression="&quot;you wins&quot;" newline="True"/>
+                                                <assign variable="userscore" expression="userscore+1"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <output expression="&quot;hasilnya adalah user=&quot; &amp;userscore &amp;&quot;computer.&quot; &amp;computerscore" newline="True"/>
+                <output expression="&quot;masukkan batu,gunting,kertas, atau quit untuk berhenti bermain.&quot;" newline="True"/>
+                <input variable="userinput"/>
+            </while>
+        </body>
+    </function>
+    <function name="konversicelcius" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius" type="Real" array="False" size=""/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="reaumur" type="Real" array="False" size=""/>
+            <output expression="&quot;konversi unit suhu celcius&quot;" newline="True"/>
+            <output expression="&quot;masukkan suhu dalam celcius&quot;" newline="True"/>
+            <input variable="celcius"/>
+            <assign variable="kelvin" expression="celcius+273.15"/>
+            <assign variable="fahrenheit" expression="(celcius*1.8)+32"/>
+            <assign variable="reaumur" expression="celcius*0.8"/>
+            <output expression="&quot;hasil dalam derajat kelvin=&quot;  &amp;kelvin" newline="True"/>
+            <output expression="&quot;hasil dalam derajat fahrenheit=&quot; &amp;fahrenheit" newline="True"/>
+            <output expression="&quot;hasil dalam derajat reaumur=&quot;  &amp;reaumur" newline="True"/>
+        </body>
+    </function>
+    <function name="konversifahrenheit" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius" type="Real" array="False" size=""/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="reaumur" type="Real" array="False" size=""/>
+            <output expression="&quot;konversi unit suhu fahrenheit&quot;" newline="True"/>
+            <output expression="&quot;masukkan suhu dalam fahrenheit&quot;" newline="True"/>
+            <input variable="fahrenheit"/>
+            <assign variable="celcius" expression="5/9*(fahrenheit-32)"/>
+            <assign variable="kelvin" expression="5/9*(fahrenheit+459.67)"/>
+            <assign variable="reaumur" expression="4/9*(fahrenheit-32)"/>
+            <output expression="&quot;hasil dalam derajat celcius=&quot; &amp;celcius" newline="True"/>
+            <output expression="&quot;hasil dalam derajat kelvin=&quot;  &amp;kelvin" newline="True"/>
+            <output expression="&quot;hasil dalam derajat reaumur=&quot;  &amp;reaumur" newline="True"/>
+        </body>
+    </function>
+    <function name="konversikelvin" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius" type="Real" array="False" size=""/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="reaumur" type="Real" array="False" size=""/>
+            <output expression="&quot;konversi unit suhu kelvin&quot;" newline="True"/>
+            <output expression="&quot;masukkan suhu dalam kelvin&quot;" newline="True"/>
+            <input variable="kelvin"/>
+            <assign variable="celcius" expression="kelvin-273.15"/>
+            <assign variable="fahrenheit" expression="kelvin*1.8-459.67"/>
+            <assign variable="reaumur" expression="(kelvin-273.15)*4/5"/>
+            <output expression="&quot;hasil dalam derajat celcius=&quot; &amp;celcius" newline="True"/>
+            <output expression="&quot;hasil dalam derajat fahrenheit=&quot;  &amp;fahrenheit" newline="True"/>
+            <output expression="&quot;hasil dalam derajat reaumur=&quot;  &amp;reaumur" newline="True"/>
+        </body>
+    </function>
+    <function name="konversireaumur" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="celcius" type="Real" array="False" size=""/>
+            <declare name="kelvin" type="Real" array="False" size=""/>
+            <declare name="fahrenheit" type="Real" array="False" size=""/>
+            <declare name="reaumur" type="Real" array="False" size=""/>
+            <output expression="&quot;konversi suhu reaumur&quot;" newline="True"/>
+            <output expression="&quot;masukkan suhu dalam reaumur&quot;" newline="True"/>
+            <input variable="reaumur"/>
+            <assign variable="celcius" expression="reaumur*5/4"/>
+            <assign variable="fahrenheit" expression="reaumur*9/4+32"/>
+            <assign variable="kelvin" expression="reaumur*5/4+273.15"/>
+            <output expression="&quot;hasil dalam derajat celcius=&quot; &amp;celcius" newline="True"/>
+            <output expression="&quot;hasil dalam derajat fahrenheit=&quot;  &amp;fahrenheit" newline="True"/>
+            <output expression="&quot;hasil dalam derajat kelvin=&quot;  &amp;kelvin" newline="True"/>
+        </body>
+    </function>
+    <function name="tebakangka" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angkatebakkan" type="Integer" array="False" size=""/>
+            <declare name="ulang" type="Boolean" array="False" size=""/>
+            <declare name="response" type="String" array="False" size=""/>
+            <declare name="percobaan" type="Integer" array="False" size=""/>
+            <assign variable="percobaan" expression="0"/>
+            <declare name="tebakansaya" type="Integer" array="False" size=""/>
+            <declare name="found" type="Boolean" array="False" size=""/>
+            <assign variable="ulang" expression="true"/>
+            <while expression="ulang==true">
+                <assign variable="angkatebakkan" expression="random(50)"/>
+                <output expression="&quot;&quot;&amp; angkatebakkan" newline="True"/>
+                <assign variable="found" expression="false"/>
+                <while expression="found==false">
+                    <output expression="&quot;permainan tebak angka&quot;" newline="True"/>
+                    <output expression="&quot;masukkan tebakkan mu&quot;" newline="True"/>
+                    <input variable="tebakansaya"/>
+                    <assign variable="percobaan" expression="percobaan+1"/>
+                    <if expression="tebakansaya==angkatebakkan">
+                        <then>
+                            <output expression="&quot;betul, hasilnya adalah &quot;&amp;angkatebakkan&amp;&quot; dan kamu mencoba sebanyak &quot;&amp;percobaan&amp;&quot;kali&quot;" newline="True"/>
+                            <assign variable="found" expression="true"/>
+                            <output expression="&quot;ketik Y untuk bermain lagi atau ketik apa saja untuk keluar&quot;" newline="True"/>
+                            <input variable="response"/>
+                            <if expression="response==&quot;Y&quot; OR response==&quot;y&quot;">
+                                <then>
+                                    <assign variable="ulang" expression="true"/>
+                                </then>
+                                <else>
+                                    <assign variable="ulang" expression="false"/>
+                                    <output expression="&quot;thanks for playing&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="angkatebakkan&gt;tebakansaya">
+                                <then>
+                                    <output expression="&quot;terlalu sedikit&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;kebanyakan&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </while>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

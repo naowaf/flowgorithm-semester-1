@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arasy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-24 03:51:41 PM"/>
+        <attribute name="created" value="YXJhc3k7QVJJRi1QQzsyMDIwLTExLTI0OzAyOjA1OjMxIFBNOzIyOTM="/>
+        <attribute name="edited" value="YXJhc3k7QVJJRi1QQzsyMDIwLTExLTI0OzAyOjA3OjIxIFBNOzE7MjQwMg=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMS0yNDswMzo1MTo0MSBQTTsyOzM3NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="value1" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter real value 1.&quot;" newline="True"/>
+            <input variable="value1"/>
+            <output expression="&quot;Enter the second value.&quot;" newline="True"/>
+            <declare name="value2" type="Real" array="False" size=""/>
+            <input variable="value2"/>
+            <output expression="&quot;Enter the third value.&quot;" newline="True"/>
+            <declare name="value3" type="Integer" array="False" size=""/>
+            <input variable="value3"/>
+            <declare name="average" type="Real" array="False" size=""/>
+            <assign variable="average" expression="(value1+value2+value3)/3"/>
+            <output expression="&quot;The average of the numbers is &quot; &amp; average" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

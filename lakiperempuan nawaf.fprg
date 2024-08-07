@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-10 02:52:22 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMi0xMDswMjozNTozOCBQTTszNjU2"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMi0xMDswMjo1MjoyMiBQTTsxOzM3NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="male, female, malefemale" type="Real" array="False" size=""/>
+            <output expression="&quot;insert male student&quot;" newline="True"/>
+            <input variable="male"/>
+            <output expression="&quot;insert female student&quot;" newline="True"/>
+            <input variable="female"/>
+            <assign variable="malefemale" expression="(male + female)"/>
+            <assign variable="male" expression="(male / malefemale)*100"/>
+            <assign variable="female" expression="(female / malefemale)*100"/>
+            <output expression="&quot;so the percentage of male student is =&quot; &amp; male &amp; &quot; % &quot; &amp; &quot; and female student percentage = &quot; &amp; female &amp; &quot; %&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

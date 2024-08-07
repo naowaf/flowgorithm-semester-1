@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arasy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-02-02 05:31:03 PM"/>
+        <attribute name="created" value="YXJhc3k7QVJJRi1QQzsyMDIxLTAyLTAyOzAzOjI5OjA5IFBNOzIzMDI="/>
+        <attribute name="edited" value="YXJhc3k7QVJJRi1QQzsyMDIxLTAyLTAyOzA1OjMxOjAzIFBNOzE7MjM5OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukkan banyak nilai:&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="x" type="Real" array="True" size="n + 1"/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="total" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <output expression="&quot;Masukkan nilai ke-&quot; &amp; i &amp; &quot;:&quot;" newline="True"/>
+                <input variable="x[i]"/>
+                <assign variable="total" expression="total + x[i]"/>
+            </for>
+            <declare name="rata2" type="Real" array="False" size=""/>
+            <assign variable="rata2" expression="total / n"/>
+            <declare name="sigma" type="Real" array="False" size=""/>
+            <assign variable="sigma" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="sigma" expression="sigma + (x[i] - rata2)^2"/>
+            </for>
+            <output expression="&quot;Standar deviasi = &quot; &amp; sqrt(sigma / (n - 1))" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

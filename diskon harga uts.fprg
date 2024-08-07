@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Administrator"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-10 03:01:06 PM"/>
+        <attribute name="created" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMi0wMTswNDozNjowMiBQTTszNjUw"/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMi0xMDswMzowMTowNiBQTTszOzM3NTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="harga, diskon, total" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan harga barang&quot;" newline="True"/>
+            <input variable="harga"/>
+            <output expression="&quot;dapat diskon&quot;" newline="True"/>
+            <assign variable="diskon" expression="02.398 / 100 * harga"/>
+            <assign variable="total" expression="harga - diskon"/>
+            <output expression="total" newline="True"/>
+            <output expression="total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

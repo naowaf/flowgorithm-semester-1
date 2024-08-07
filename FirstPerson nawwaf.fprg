@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arasy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-11-17 04:02:13 PM"/>
+        <attribute name="created" value="YXJhc3k7QVJJRi1QQzsyMDIwLTExLTE3OzAyOjI4OjE4IFBNOzIzMDU="/>
+        <attribute name="edited" value="YXJhc3k7QVJJRi1QQzsyMDIwLTExLTE3OzAyOjM3OjAwIFBNOzQ7MjQwNw=="/>
+        <attribute name="edited" value="QWRtaW5pc3RyYXRvcjtXSU4tMUw1TTk3R0JWNVA7MjAyMC0xMS0xNzswNDowMjoxMyBQTTsxOzM3NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nawwaf" type="String" array="False" size=""/>
+            <output expression="&quot;Enter the name of the first person who comes to your mind the moment you open your eyes: &quot;" newline="True"/>
+            <input variable="nawwaf"/>
+            <output expression="&quot;The first person who comes to your mind the moment you open your eyes is &quot;" newline="False"/>
+            <output expression="&quot;nawwaf&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

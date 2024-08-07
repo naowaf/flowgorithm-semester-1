@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arasy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-01 04:11:10 PM"/>
+        <attribute name="created" value="YXJhc3k7QVJJRi1QQzsyMDIwLTEyLTAxOzEyOjU4OjIyIFBNOzIyOTg="/>
+        <attribute name="edited" value="YXJhc3k7QVJJRi1QQzsyMDIwLTEyLTAxOzA0OjExOjEwIFBNOzI7MjM5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="harga" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan harga barang: &quot;" newline="True"/>
+            <input variable="harga"/>
+            <call expression="hitungPembayaran(harga, 10)"/>
+        </body>
+    </function>
+    <function name="hitungPembayaran" type="None" variable="">
+        <parameters>
+            <parameter name="hargaBarang" type="Real" array="False"/>
+            <parameter name="pajak" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="totalHarga" type="Real" array="False" size=""/>
+            <assign variable="totalHarga" expression="hargaBarang + (pajak / 100 * hargaBarang)"/>
+            <output expression="&quot;Total yang harus dihayar = &quot; &amp; totalHarga" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

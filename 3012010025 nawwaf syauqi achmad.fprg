@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="arasy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-12-01 04:07:40 PM"/>
+        <attribute name="created" value="YXJhc3k7QVJJRi1QQzsyMDIwLTEyLTAxOzEyOjU4OjIyIFBNOzIyOTg="/>
+        <attribute name="edited" value="YXJhc3k7QVJJRi1QQzsyMDIwLTEyLTAxOzAxOjA0OjE5IFBNOzE7MjQwMQ=="/>
+        <attribute name="edited" value="bmFmaWlzO0tPTVBVVEVSLU9CQVQ7MjAyMC0xMi0wMTswNDowNzo0MCBQTTsxOzI5Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="harga" type="Real" array="False" size=""/>
+            <output expression="&quot;Masukkan harga barang: &quot;" newline="True"/>
+            <input variable="harga"/>
+            <call expression="hitungPembayaran(harga ,10)"/>
+        </body>
+    </function>
+    <function name="hitungPembayaran" type="None" variable="">
+        <parameters>
+            <parameter name="hargaBarang" type="Real" array="False"/>
+            <parameter name="pajak" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="totalHarga" type="Real" array="False" size=""/>
+            <assign variable="totalHarga" expression="hargaBarang + (pajak / 100 * hargabarang)"/>
+            <output expression="&quot;Total yang harus dihayar = &quot; &amp; totalHarga" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
